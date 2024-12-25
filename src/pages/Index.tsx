@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Expertise } from "@/components/Expertise";
 import { Projects } from "@/components/Projects";
-import { Contact } from "@/components/Contact";
+import { EmailContact } from "@/components/EmailContact";
 
 const Index = () => {
   return (
@@ -9,7 +9,7 @@ const Index = () => {
       <Hero />
       <Expertise />
       <Projects />
-      <Contact />
+      <EmailContact />
     </div>
   );
 };
