@@ -6,15 +6,16 @@ import { loadSlim } from "@tsparticles/slim";
 import type { Container, Engine } from "@tsparticles/engine";
 
 export const Hero = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
+
+const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
-  }, []);
+}, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
+const particlesLoaded = useCallback(async (container: Container | undefined) => {
     console.log("Particles container loaded", container);
-  }, []);
+}, []);
 
-  return (
+return (
     <motion.section 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -77,7 +78,7 @@ export const Hero = () => {
             number: {
               density: {
                 enable: true,
-                area: 800,
+                value_area: 800,
               },
               value: 80,
             },
@@ -132,4 +133,3 @@ export const Hero = () => {
       </div>
     </motion.section>
   );
-};
