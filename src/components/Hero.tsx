@@ -78,7 +78,7 @@ return (
             number: {
               density: {
                 enable: true,
-                value_area: 800,
+                area: 800,  // Changed from value_area to area
               },
               value: 80,
             },
