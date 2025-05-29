@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Gift, Key, Lock, Shield } from "lucide-react";
+import { Gift, Key, Lock, Shield, Car } from "lucide-react";
 
 const projects = [
+  {
+    title: "Modern Taxi App",
+    description: "Full-featured taxi service application with real-time tracking and booking (For an preview, please contact me)",
+    icon: Car,
+    technologies: ["React Native", "Node.js", "WebSocket", "Google Maps API"]
+  },
   {
     title: "Giveaway Winner",
     description: "Automated system for managing giveaway distributions",
